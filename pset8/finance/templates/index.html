@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%">
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Unit Price</th>
+            <th>Total Price</th>
+        </tr>
+        {% for i in index %}
+            <tr>
+                <th>{{ i["symbol"] }}</th>
+                <th>{{ i["name"] }}</th>
+                <th>{{ i["amount"] }}</th>
+                <th>{{ "%.2f"|format(i["unitPrice"]) }}$</th>
+                <th>{{ "%.2f"|format(i["totalPrice"]) }}$</th>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <p style = "font-weight: bold">Total cash available: {{ "%.2f"|format(cash) }}$</p>
+    <p style = "font-weight: bold">Grand total: {{ "%.2f"|format(totalAssets) }}$</p>
+{% endblock %}

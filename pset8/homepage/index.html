@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <!-- JS components for Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Personal Resume</title>
+    </head>
+    <body>
+        <h1>Personal Resume</h1>
+        <p>
+            <a class="btn btn-primary btn-lg btn-block" data-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseMenu">
+                Menu
+            </a>
+        </p>
+        <div class="dropdown-menu collapse" id="collapseMenu">
+            <a class="dropdown-item" href="qual.html">Qualifications</a>
+            <a class="dropdown-item" href="edu.html">Education</a>
+            <a class="dropdown-item" href="hob.html">Javascript #todo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/jurgis-vosylius/">Link to my LinkedIn</a>
+        </div>
+        <h3 style="font-size: 1rem; text-align: center;">
+            This is a solution for problem set 8 at CS50x hosted by Harvard University. Following criteria must be met:
+        </h3>
+        <ul style="list-style-type:none;">
+            <li>At least 10 distinct HTML tags</li>
+            <li>Project must contain four different .html pages, at least one of which is index.html.</li>
+            <li>Navigation toolbar in order to get from any page on the website to any other page.</li>
+            <li>Integrate one or more features from Bootstrap.</li>
+            <li>Five different CSS selectors (tag, class or ID) and within five different CSS properties.</li>
+            <li>One or more features of JavaScript</li>
+            <li>Ensure that your website looks nice on browsers both on mobile devices as PCs.</li>
+        </ul>
+
+        <h2>About me</h2>
+        <div class="content">
+            <img src="0.jpg" alt="Profile Picture">
+            <p id="aboutme">
+                Born in Lithuania and raised in Northern Jutland. I am a 4th year med student, ultra runner, 3D-printing DIY troubleshooter, VR enthusiast and a previous mech. eng. student. Nice to meet you!
+            </p>
+        </div>
+
+        <div id="textform">
+            <form action="#" id="usrform">
+                <input style="width: 100%;" type="text" placeholder="Name"  name="usrname">
+                <br>
+                <textarea style="width: 100%;" rows="4" cols="50" name="comment" form="usrform">Enter your message here... (#todo)</textarea>
+                <br>
+                <input style="width: 100%;" type="submit">
+            </form>
+        </div>
+    </body>
+</html>

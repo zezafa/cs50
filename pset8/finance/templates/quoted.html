@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stocks quote
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%">
+        <tr>
+            <th>Stock</th>
+            <th>Symbol</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <th>{{ stock }}</th>
+            <th>{{ symbol }}</th>
+            <th>{{ "%.2f"|format(price) }}$</th>
+        </tr>
+    </table>
+{% endblock %}
