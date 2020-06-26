@@ -7,5 +7,6 @@ Solutions for different tasks in:
 * Python
 * Flask
 * Data Structures and SQL
+* Basic Web Design
 
 More info about the course at https://cs50.harvard.edu/x/2020/.
